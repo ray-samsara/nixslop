@@ -27,7 +27,6 @@
       vim
       fastfetch
       steam
-      spotify
 
       # devel
       stdenv.cc
@@ -74,8 +73,5 @@
       enabledExtensions = with spicePkgs.extensions; [
         adblock
       ];
-
-      theme = spicePkgs.themes.catppuccin;
-      colorScheme = "mocha";
     };
 }
