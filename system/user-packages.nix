@@ -26,7 +26,10 @@
       discord
       vim
       fastfetch
+
+      # games
       steam
+      osu-lazer-bin
 
       # devel
       stdenv.cc
