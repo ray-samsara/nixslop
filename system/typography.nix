@@ -10,7 +10,7 @@
     enableDefaultPackages = true;
 
     packages = with pkgs; [
-      noto-fonts
+      adwaita-fonts
       noto-fonts-cjk-sans
       noto-fonts-color-emoji
       iosevka
@@ -23,7 +23,7 @@
       defaultFonts =
       {
         monospace = [ "pkgs.iosevka" ];
-        sansSerif = [ "pkgs.noto-fonts.noto-sans" ];
+        sansSerif = [ "pkgs.adwaita-fonts.adwaita-sans" ];
         serif = [ "pkgs.noto-fonts.noto-serif" ];
       };
     };
