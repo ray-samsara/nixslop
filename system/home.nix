@@ -11,13 +11,14 @@
       gnomeExtensions.appindicator
       gnomeExtensions.system-monitor
       gnomeExtensions.user-themes
-      gnome-tweaks
+      gnomeExtensions.caffeine
     ];
 
     dconf.settings."org/gnome/shell".enabled-extensions = with pkgs; [
       gnomeExtensions.appindicator.extensionUuid
       gnomeExtensions.system-monitor.extensionUuid
       gnomeExtensions.user-themes.extensionUuid
+      gnomeExtensions.caffeine.extensionUuid
     ];
   };
 }
