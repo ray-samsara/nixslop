@@ -11,6 +11,8 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
 
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
   };
 
   outputs =
@@ -19,6 +21,7 @@
       home-manager,
       nix-vscode-extensions,
       spicetify-nix,
+      nix-flatpak,
       ...
     }:
     
@@ -33,6 +36,7 @@
         modules = [
           ./configuration.nix
           home-manager.nixosModules.home-manager
+          nix-flatpak.nixosModules.nix-flatpak
           spicetify-nix.nixosModules.default
         ];
       };
