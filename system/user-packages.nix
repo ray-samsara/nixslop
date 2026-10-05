@@ -32,6 +32,9 @@
       osu-lazer-bin
 
       # devel
+      clang-tools
+      clang
+      bear
       stdenv.cc
       gnumake
       cmake

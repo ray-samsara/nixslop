@@ -10,6 +10,7 @@
       # home...
       ./system/home.nix
       ./cfg/vscodium/init.nix
+      ./cfg/neovim/init.nix
 
       ./system/bootloader.nix
       ./system/env.nix

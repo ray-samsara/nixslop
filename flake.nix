@@ -13,6 +13,11 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+
+    nix4nvchad = {
+      url = "github:nix-community/nix4nvchad";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -22,6 +27,7 @@
       nix-vscode-extensions,
       spicetify-nix,
       nix-flatpak,
+      nix4nvchad,
       ...
     }:
     
@@ -30,7 +36,7 @@
         system = "x86_64-linux";
 
         specialArgs = {
-          inherit nix-vscode-extensions spicetify-nix;
+          inherit nix-vscode-extensions spicetify-nix nix4nvchad;
         };
 
         modules = [
