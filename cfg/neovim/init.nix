@@ -4,12 +4,12 @@
 
 {
   home-manager.users.pc =
-    {
-      config,
-      ...
-    }:
+  {
+    config,
+    ...
+  }:
 
-    {
-      home.file.".config/nvim/lua/plugins/lspconfig.lua".source = ./lspconfig.lua;
-    };
+  {
+    home.file.".config/nvim/lua/plugins/lspconfig.lua".source = ./lspconfig.lua;
+  };
 }

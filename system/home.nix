@@ -31,9 +31,12 @@
     programs.nvchad.neovim = pkgs.neovim-unwrapped;
     programs.nvchad.extraConfig = ''
       -- Custom vim options
-      vim.opt.shiftwidth = 2
       vim.opt.tabstop = 2
+      vim.opt.softtabstop = 2
+      vim.opt.shiftwidth = 2
       vim.opt.expandtab = true
+      vim.opt.autoindent = true
+      vim.opt.smartindent = true
     '';
     programs.nvchad.chadrcConfig = ''
       local M = {}

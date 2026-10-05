@@ -45,6 +45,7 @@
       libtool
       git
       gh
+      glib.dev
 
       # vscodium stuff
       (vscode-with-extensions.override {

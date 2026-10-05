@@ -4,7 +4,7 @@
 
 {
   home-manager.users.pc =
-    {
+   {
       config,
       ...
     }:
