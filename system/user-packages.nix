@@ -46,6 +46,7 @@
       git
       gh
       glib.dev
+      gnome-boxes
 
       # vscodium stuff
       (vscode-with-extensions.override {
