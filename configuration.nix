@@ -20,6 +20,7 @@
     ./system/services.nix
     ./system/typography.nix
     ./system/user-packages.nix
+    ./system/virtualization.nix
 
     ./hardware-configuration.nix
   ];

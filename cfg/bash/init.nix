@@ -8,7 +8,9 @@
     ...
   }:
   {
-    home.file.".inputrc".source = ./inputrc;
+    home.file.".inputrc".text = ''
+      set completion-ignore-case On
+    '';
 
     programs.git = {
       enable = true;
@@ -30,9 +32,6 @@
         "goto-project-dir" = "cd /disks/media/Works/FROM_GITHUB/";
         "rebuild-flake" = "sudo nixos-rebuild switch --show-trace --flake .";
       };
-      profileExtra = ''
-        [[ -f ~/.inputrc ]] && . ~/.inputrc
-      '';
     };
   };
 }

@@ -16,7 +16,7 @@
   users.users."pc" = {
     isNormalUser = true;
     description = "pc";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "qemu-libvirtd" "libvirtd" "networkmanager" "wheel" ];
     packages = with pkgs; [
       # uncomment and comment 'google-chrome' to use chromium instead
       # i use google chrome only because these chromium builds cannot sync my extensions
